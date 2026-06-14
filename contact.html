@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimum-scale=1.0, user-scalable=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="APEX Chauffeur">
+  <meta name="theme-color" content="#0F172A">
+  <meta name="description" content="Contact APEX Chauffeur. Reach our 24/7 concierge support desk or request service reservations. We respond within 15 minutes.">
+  <meta property="og:title" content="Apex Chauffeur | Contact Us | Premium Ground Transportation USA">
+  <meta property="og:description" content="We're Always On. Reach our 24/7 concierge support line or send us a booking message.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=90">
+  <meta property="og:type" content="website">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no">
+  
+  <title>Apex Chauffeur | Contact Us | Premium Ground Transportation USA</title>
+  
+  <!-- Preconnect to Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Central Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="contact.html">
+</head>
+<body>
+
+  <!-- ==========================================
+       GLOBAL NAVIGATION
+       ========================================== -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container">
+      <a href="index.html" class="logo">APEX<span>Chauffeur</span></a>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle Menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-menu-overlay" id="mobileOverlay">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="fleet.html">Fleet</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="contact.html" class="btn btn-primary">Book A Ride</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         SECTION 5.1: CONTACT HERO
+         ========================================== -->
+    <section class="contact-hero" style="--hero-bg: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=90');">
+      <div class="contact-hero-overlay"></div>
+      <div class="container">
+        <span class="eyebrow">CONCIERGE DESK</span>
+        <h1>We're Always <span class="italic-accent">On.</span></h1>
+        <p>Reach us anytime. We respond within 15 minutes, 24 hours a day, 365 days a year.</p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5.2: CONTACT SPLIT LAYOUT
+         ========================================== -->
+    <section class="contact-split-section section-padding">
+      <div class="container contact-split-grid">
+        <!-- Left Side: Contact Form -->
+        <div class="contact-form-wrapper reveal">
+          <div class="contact-form-card glass-panel">
+            <h3>Send Us a Message</h3>
+            <form class="booking-form" id="contactMsgForm">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" id="fullName" class="form-control" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                </div>
+              </div>
+              
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="(555) 000-0000" required>
+                </div>
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select id="subject" class="form-control">
+                    <option value="general">General Inquiry</option>
+                    <option value="quote">Custom Rate Quote</option>
+                    <option value="billing">Billing & Invoicing</option>
+                    <option value="feedback">Feedback & Reviews</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="serviceType" class="form-label">Service Type</label>
+                <select id="serviceType" class="form-control">
+                  <option value="airport">Airport Transfer</option>
+                  <option value="corporate">Corporate Transport</option>
+                  <option value="hourly">Hourly Charter</option>
+                  <option value="citytocity">City-to-City Long-Haul</option>
+                  <option value="event">Wedding & Event Staging</option>
+                  <option value="other">Other / Special Request</option>
+                </select>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="prefDate" class="form-label">Preferred Date</label>
+                  <input type="date" id="prefDate" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="prefTime" class="form-label">Preferred Time</label>
+                  <input type="time" id="prefTime" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea id="message" class="form-control" rows="4" placeholder="Detail your itinerary, passenger counts, or vehicle preferences..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+              
+              <div class="fine-print">
+                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 5H9V3.5C9 1.57 7.43 0 5.5 0C3.57 0 2 1.57 2 3.5V5H1C0.45 5 0 5.45 0 6V13C0 13.55 0.45 14 1 14H10C10.55 14 11 13.55 11 13V6C11 5.45 10.55 5 10 5ZM3.5 3.5C3.5 2.4 4.4 1.5 5.5 1.5C6.6 1.5 7.5 2.4 7.5 3.5V5H3.5V3.5ZM5.5 10.5C4.95 10.5 4.5 10.05 4.5 9.5C4.5 8.95 4.95 8.5 5.5 8.5C6.05 8.5 6.5 8.95 6.5 9.5C6.5 10.05 6.05 10.5 5.5 10.5Z" fill="#8BA3B8"/>
+                </svg>
+                Your information is never shared with third parties
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Right Side: Contact Info & Map -->
+        <div class="contact-info-panel reveal">
+          <span class="eyebrow">GET IN TOUCH</span>
+          <h2>Concierge Details</h2>
+          <p>Whether you require assistance with an existing booking, need to modify flight details, or want to establish corporate accounts, our support desk is prepared to help.</p>
+          
+          <div class="contact-blocks">
+            <!-- Block 1 -->
+            <div class="contact-detail-block">
+              <div class="contact-detail-icon flex-center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Phone &amp; WhatsApp</div>
+                <div class="contact-detail-value">+1 (800) 555-0192</div>
+              </div>
+            </div>
+            
+            <!-- Block 2 -->
+            <div class="contact-detail-block">
+              <div class="contact-detail-icon flex-center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Email Support</div>
+                <div class="contact-detail-value">info@apexchauffeur.com</div>
+              </div>
+            </div>
+
+            <!-- Block 3 -->
+            <div class="contact-detail-block">
+              <div class="contact-detail-icon flex-center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Operational Hours</div>
+                <div class="contact-detail-value">24 hours &middot; 7 days &middot; 365 days a year</div>
+              </div>
+            </div>
+
+            <!-- Block 4 -->
+            <div class="contact-detail-block">
+              <div class="contact-detail-icon flex-center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Headquarters Base</div>
+                <div class="contact-detail-value">New York, NY — Serving 47+ US Cities</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- WhatsApp Chat Box -->
+          <div class="whatsapp-chat-box">
+            <p>Prefer text messages? Chat directly with our concierge team over WhatsApp for instant quotes and bookings.</p>
+            <button class="btn btn-whatsapp" onclick="window.open('https://wa.me/18005550192', '_blank')">
+              <!-- WhatsApp Icon SVG -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.858.002-2.634-1.02-5.11-2.884-6.974C16.29 1.908 13.81 1.887 11.18 1.887c-5.441 0-9.866 4.42-9.87 9.86-.001 1.762.464 3.483 1.348 5.013l-.993 3.628 3.712-.974zm12.39-7.234c-.29-.145-1.714-.846-1.979-.942-.266-.097-.46-.145-.653.145-.193.29-.748.942-.917 1.135-.169.19-.338.214-.628.07-.29-.146-1.226-.452-2.335-1.44-1.127-1.004-1.89-2.246-2.112-2.63-.223-.385-.024-.593.12-.737.13-.13.29-.338.435-.507.145-.169.193-.29.29-.483.097-.193.048-.361-.025-.506-.072-.145-.652-1.572-.893-2.152-.234-.56-.474-.484-.652-.493-.17-.008-.361-.01-.554-.01s-.507.072-.772.361c-.266.29-1.014.99-1.014 2.413s1.037 2.796 1.182 2.99c.145.19 2.04 3.116 4.939 4.368 2.899 1.251 2.899.835 3.43.787.53-.048 1.715-.7 1.956-1.376.24-.677.24-1.256.17-1.376-.073-.12-.266-.217-.556-.362z"/>
+              </svg>
+              Chat on WhatsApp
+            </button>
+          </div>
+          
+          <!-- Map Viewport -->
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280006526!2d-74.11976375685816!3d40.69766374864194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1689257640473!5m2!1sen!2sus" loading="lazy" aria-label="NYC Operational Boundary Map"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5.3: FAQ ACCORDION
+         ========================================== -->
+    <section class="faq-section section-padding">
+      <div class="container">
+        <div class="section-header-center text-center reveal">
+          <span class="eyebrow">COMMON INQUIRIES</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about our chauffeur services, policies, and booking details.</p>
+        </div>
+        
+        <div class="faq-container reveal">
+          <!-- Item 1 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question-btn">
+              <span class="faq-question-title">How far in advance should I book?</span>
+              <span class="faq-icon-toggle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <line x1="12" y1="5" x2="12" y2="19"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-content">
+                <p>We recommend booking at least 24 hours in advance to guarantee your preferred vehicle class. However, we can often accommodate last-minute bookings within 3 hours depending on localized fleet availability.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question-btn">
+              <span class="faq-question-title">Is the fare really flat with no hidden fees?</span>
+              <span class="faq-icon-toggle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <line x1="12" y1="5" x2="12" y2="19"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-content">
+                <p>Yes. Our rates are completely flat and include all highway tolls, standard airport fees, and base driver gratuity. We do not implement surge pricing. The price you see in your reservation confirmation is the final invoice amount.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question-btn">
+              <span class="faq-question-title">What if my flight is delayed?</span>
+              <span class="faq-icon-toggle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <line x1="12" y1="5" x2="12" y2="19"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-content">
+                <p>We monitor all commercial flights in real-time. If your flight is delayed or lands early, we dynamically shift your chauffeur's arrival schedule. You do not need to call us or worry about wait fees; we will be waiting when you walk out.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question-btn">
+              <span class="faq-question-title">Do you offer child seats?</span>
+              <span class="faq-icon-toggle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <line x1="12" y1="5" x2="12" y2="19"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-content">
+                <p>Yes. We can provide age-appropriate booster, rear-facing, or forward-facing toddler seats. Please select this option and specify the child's age in your booking notes so we can secure the seat in advance.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question-btn">
+              <span class="faq-question-title">Can I request a specific chauffeur?</span>
+              <span class="faq-icon-toggle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <line x1="12" y1="5" x2="12" y2="19"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-content">
+                <p>Yes. Corporate and frequent travelers can request a preferred chauffeur in their account dashboard. While we cannot guarantee availability due to regulatory driving limits, we make every effort to accommodate requests.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question-btn">
+              <span class="faq-question-title">Do you serve my city?</span>
+              <span class="faq-icon-toggle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <line x1="12" y1="5" x2="12" y2="19"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-content">
+                <p>We serve over 47 major metropolitan markets across the United States, including New York, Los Angeles, Chicago, Miami, Houston, San Francisco, and Boston. Check our full list of operational boundaries by contacting our concierge desk.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <button class="faq-question-btn faq-item glass-panel">
+            <span class="faq-question-title">How do I pay?</span>
+            <span class="faq-icon-toggle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </span>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-content">
+                <p>All bookings are secured by major credit cards (Visa, Mastercard, Amex, Discover) or set up under corporate account billing codes. Payment details are encrypted and charged only after the ride finishes.</p>
+              </div>
+            </div>
+          </button>
+
+          <!-- Item 8 -->
+          <div class="faq-item glass-panel">
+            <button class="faq-question-btn">
+              <span class="faq-question-title">Is there a cancellation policy?</span>
+              <span class="faq-icon-toggle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <line x1="12" y1="5" x2="12" y2="19"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-content">
+                <p>Yes. Bookings canceled more than 12 hours before the scheduled pickup time receive a full refund. Cancellations made within 12 hours of the pickup are subject to a late cancellation fee equal to the base fare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       GLOBAL FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">APEX<span>Chauffeur</span></a>
+          <p>Providing premium ground transportation solutions with flat-rates and absolute reliability since 2006.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Airport Transfers</a></li>
+            <li><a href="services.html">Corporate Travel</a></li>
+            <li><a href="services.html">Hourly Charters</a></li>
+            <li><a href="services.html">City to City</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="fleet.html">Our Fleet</a></li>
+            <li><a href="about.html">Our Standards</a></li>
+            <li><a href="contact.html">Support / FAQs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <ul class="footer-info">
+            <li>
+              <!-- Phone Icon -->
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              +1 (800) 555-0192
+            </li>
+            <li>
+              <!-- Mail Icon -->
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              info@apexchauffeur.com
+            </li>
+            <li>
+              <!-- Location Icon -->
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              New York City, NY
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div>&copy; 2026 APEX Chauffeur. All rights reserved.</div>
+        <div class="footer-badges">Licensed &middot; Insured &middot; 5-Star Service</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Central Script -->
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Handle contact form mock submission
+    const contactForm = document.getElementById('contactMsgForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const clientName = document.getElementById('fullName').value.trim();
+        alert(`Message Sent!\n\nThank you, ${clientName}.\nOur concierge team has received your inquiry and will email you back within 15 minutes.`);
+        contactForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>
